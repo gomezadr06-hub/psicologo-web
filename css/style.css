@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #faf9f7;
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #2d2d2d;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #6b8e7f;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #6b8e7f;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 40px;
+  background: #f5f3f0;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+  color: #2d2d2d;
+  max-width: 700px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #5a5a5a;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.cta {
+  display: inline-block;
+  background: #6b8e7f;
+  color: white;
+  padding: 16px 36px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.cta:hover {
+  background: #5a7a6d;
+}
+
+.cta.button {
+  cursor: pointer;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 100px 40px;
+}
+
+.section h2 {
+  font-size: 42px;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #6b8e7f;
+}
+
+.card p {
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.steps > div {
+  text-align: center;
+}
+
+.steps h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #6b8e7f;
+}
+
+.steps p {
+  color: #5a5a5a;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.cta-section {
+  text-align: center;
+  padding: 100px 40px;
+  background: #f5f3f0;
+}
+
+.cta-section h2 {
+  margin-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 14px 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #3a3a3a;
+  background: #ffffff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #6b8e7f;
+  box-shadow: 0 0 0 3px rgba(107, 142, 127, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 40px;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  color: #5a5a5a;
+}
+
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #ffffff;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #6b8e7f;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h4 {
+  color: #6b8e7f;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.faq-item p {
+  color: #5a5a5a;
+  line-height: 1.8;
+}
+
+ul {
+  margin-left: 20px;
+  color: #5a5a5a;
+}
+
+ul li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .navbar ul {
+    gap: 20px;
+    font-size: 14px;
+  }
+  
+  .hero {
+    padding: 80px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .section {
+    padding: 60px 20px;
+  }
+  
+  .section h2 {
+    font-size: 32px;
+  }
+}
